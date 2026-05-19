@@ -44,4 +44,9 @@ public class House extends Asset {
     public void setLotSize(int lotSize) {
         this.lotSize = lotSize;
     }
+
+    @Override
+    public double getValue() {
+        return getOriginalCost();
+    }
 }
